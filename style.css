@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+    font-family: 'Arial', sans-serif;
+}
+
+canvas {
+    display: block;
+}
+
+#webcam {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 240px;
+    height: 180px;
+    border-radius: 8px;
+    border: 2px solid #333;
+    z-index: 10;
+    transform: scaleX(-1); /* Mirror the webcam */
+    opacity: 0.7;
+}
+
+#loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+    z-index: 20;
+    pointer-events: none;
+}
+
+#status {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #0f0;
+    font-size: 18px;
+    z-index: 10;
+    text-shadow: 0 0 5px #000;
+}

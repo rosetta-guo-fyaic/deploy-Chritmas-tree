@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Particle Christmas Tree</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/",
+                "@mediapipe/tasks-vision": "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.8/+esm"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="loading">Loading AI Model...</div>
+    <video id="webcam" autoplay playsinline></video>
+    <div id="status">Status: Waiting for hand...</div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
